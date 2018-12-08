@@ -12,6 +12,6 @@ fn main() {
     file.read_to_end(&mut data).expect("could not read file");
 
     let mut chip8 = Chip8::new();
-    chip8.load_rom(data);
+    chip8.load_rom(&data);
 
 }
